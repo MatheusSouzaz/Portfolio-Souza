@@ -1,0 +1,215 @@
+body {
+    font-family: "Poppins", sans-serif;
+    margin: 0 auto;
+    max-width: 1120px;
+    background: linear-gradient(150deg, #000000, #1100ffd3);
+    background-size: 120% 120%;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 25px;
+}
+
+.header a .logo {
+    border: 2px solid;
+    border-radius: 50%;
+    color: rgb(255, 255, 255);
+    width: 65px;
+    height: 65px;
+    text-align: center;
+    line-height: 55px;
+    font-size: 33px;
+    text-decoration: underline;
+    font-family: "Raleway", sans-serif;
+    transition: 0.3s;
+}
+
+.header .logo:hover {
+    transform: scale(1.05);
+}
+
+.header .menu ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+.header .menu li a {
+    color: rgb(255, 255, 255);
+    transition: 0.3s;
+    padding: 10px 20px;
+    text-transform: capitalize;
+    font-size: 20px;
+}
+
+.header .menu ul li a:hover {
+    background-color: rgba(22, 84, 255, 0.849);
+    border-radius: 50px;
+    box-shadow: 2px 10px 54px 0px rgba(15,83,219,0.78);
+}
+
+.home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 70px 0;
+    gap: 30px;
+}
+
+.home .info {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 100%;
+    padding: 0 15px;
+    align-items: center;
+    letter-spacing: 2px;
+}
+
+.home .info h1 {
+    font-size: 44px;
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+}
+
+.home .info p {
+    font-size: 25px;
+    color: #ffff;
+    font-weight: 300;
+}
+
+.home .info .social-medias {
+    display: flex;
+    gap: 20px;
+}
+
+.home .info .social-medias a i {
+    border: 1px solid;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    font-size: 26px;
+    transition: 0.3s;
+    text-align: center;
+}
+
+.home .info .social-medias a i:hover {
+    box-shadow: 10px 10px 58px -8px rgba(255, 255, 255, 0.78);
+    transform: scale(1.1);
+}
+
+.home .container-photo .photo {
+    max-width: 450px;
+    border-radius: 50%;
+    display: flex;
+
+}
+
+.home .container-photo img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+.home .photo.intern-shadow {
+    background: linear-gradient(to right, #080b8d, #13b3cf, #036ffc);
+    background-size: 190% 180%;
+    animation: gradient-animation 5s ease infinite;
+}
+@keyframes gradient-animation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.projects {
+    padding: 70px 0;
+}
+
+.projects .tittle {
+    padding: 60px 0;
+    text-align: center;
+    font-size: 45px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #ffff;
+}
+
+.projects .container-projects {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    justify-content: center;
+}
+
+.projects .project {
+    max-width: 260px;
+    max-height: 500px;
+    position: relative;
+    display: none;
+}
+.projects .project.active{
+    display: block;
+}
+.projects .project img{
+    height: 100%;
+}
+.projects .project h3{
+    background-color: #040203;
+    width: 100%;
+    padding: 10px 0 10px 20px;
+    position: absolute;
+    bottom: 0;
+    color: #ffff;
+}
+
+.projects .project .info-project{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    font-weight: 600;
+    opacity: 0;
+    transition: 0.3s;
+    color: #ffff;
+    padding: 20px;
+} 
+.projects .project .info-project:hover{
+    opacity: 0.75;
+    background-color: #000000;
+}
+
+.projects .btn-show-projects{
+    background:none ;
+    border-radius: 15px;
+    border: 1px solid #ffff;
+    width: 180px;
+    padding: 20px;
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    color: #ffff;
+}
+.projects .btn-show-projects:hover{
+    background-color: rgba(0, 0, 0, 0.904);
+    transition: 0.3s;
+    box-shadow: 10px 10px 54px 0px rgba(0, 0, 0, 0.78);
+}
+.projects .btn-show-projects.used{
+    display: none;
+}
